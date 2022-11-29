@@ -16,7 +16,7 @@ const WebcamCapture = () => {
     const imageSrc = webcamRef.current.getScreenshot();
     console.log(`imageSrc = ${imageSrc}`)
                 //for deployment, you should put your backend url / api
-    axios.post('https://enigmatic-plains-58254.herokuapp.com/api', {data : imageSrc})
+    axios.post('http://35.226.236.112:5000/api', {data : imageSrc})
     	  .then(res => {
       	  console.log(`response = ${res.data}`)
       	  setName(res.data)
