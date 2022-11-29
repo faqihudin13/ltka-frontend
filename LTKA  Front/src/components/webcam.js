@@ -30,7 +30,7 @@ const WebcamCapture = () => {
   
   return (
   <div className='webcam'>
-    <Webcam className='web'
+    <Webcam
      audio = {false}
 	 height = {500}
 	 ref = {webcamRef}
@@ -39,8 +39,7 @@ const WebcamCapture = () => {
 	 videoConstraints = {videoConstraints}
 	/>
     <button onClick={capture} className='button'>Click Me!</button>
-    <h1 > Ini adalah : {name}  </h1>
-
+	<h2>{name}</h2>
   </div>
 	);
   
